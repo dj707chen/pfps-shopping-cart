@@ -1,30 +1,48 @@
-project/boot
-target
-.ensime
-.ensime_lucene
-.ensime_cache
-.ensime_snapshot
-ensime.sbt
-TAGS
-\#*#
-*~
-.#*
-.lib
-.history
-.*.swp
+# bloop and metals
+.bloop
+.bsp
+.metals
+
+# scala 3
+.tasty
+
+# vs code
+.vscode
+
+# sbt
+bin/
+build/
+target/
+
+# (may want to keep parts of 'project')
+!project/
+project/*
+!project/build.properties
+!project/plugins.sbt
+
+# eclipse
+build
+.classpath
+.project
+.settings
+.worksheet
+
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
 .idea
-.idea/*
-.idea_modules
+
+# mac
 .DS_Store
-.sbtrc
-*.sublime-project
-*.sublime-workspace
-tests.iml
-# Auto-copied by sbt-microsites
-docs/src/main/tut/contributing.md
-.ignore
-result*
-project/metals.sbt
-.bloop/
-.metals/
-project/.bloop/
+
+# other?
+.history
+.scala_dependencies
+.cache
+.cache-main
+
+#general
+*.class
+
